@@ -1,0 +1,421 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Dream Gurkhas Inn</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#94f990",
+                "primary-container": "#1b1b1b",
+                "outline": "#7e7576",
+                "outline-variant": "#cfc4c5",
+                "surface-variant": "#e2e2e2",
+                "secondary-fixed-dim": "#78dc77",
+                "secondary": "#2E7D32",
+                "surface-container": "#eeeeee",
+                "surface-bright": "#f9f9f9",
+                "tertiary": "#000000",
+                "surface-dim": "#dadada",
+                "on-tertiary-fixed": "#0b2013",
+                "surface-tint": "#2E7D32",
+                "on-tertiary-container": "#728977",
+                "tertiary-container": "#0b2013",
+                "surface": "#f9f9f9",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#e2e2e2",
+                "surface-container-highest": "#e2e2e2",
+                "inverse-primary": "#c6c6c6",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#002204",
+                "on-primary-container": "#848484",
+                "on-primary-fixed": "#1b1b1b",
+                "on-surface-variant": "#4c4546",
+                "on-tertiary-fixed-variant": "#364c3c",
+                "on-secondary": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-surface": "#2f3131",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#c6c6c6",
+                "on-surface": "#1a1c1c",
+                "on-secondary-fixed-variant": "#005313",
+                "primary": "#000000",
+                "background": "#ffffff",
+                "surface-container-high": "#e8e8e8",
+                "on-primary-fixed-variant": "#474747",
+                "error": "#ba1a1a",
+                "on-secondary-container": "#2E7D32",
+                "surface-container-low": "#f3f3f3",
+                "inverse-on-surface": "#f1f1f1",
+                "tertiary-fixed-dim": "#b4cdb8",
+                "tertiary-fixed": "#d0e9d4",
+                "secondary-container": "#91f78e",
+                "on-background": "#1a1c1c"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "container-max": "1200px",
+                "margin-desktop": "48px",
+                "unit": "8px",
+                "section-gap": "80px",
+                "margin-mobile": "16px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Noto Serif"
+                ],
+                "headline-xl-mobile": [
+                        "Noto Serif"
+                ],
+                "label-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-xl": [
+                        "Noto Serif"
+                ],
+                "headline-md": [
+                        "Noto Serif"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Noto Serif"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
+<!-- Top Utility Bar -->
+<div class="border-b border-outline-variant/20 bg-surface-container-low">
+<div class="flex justify-end items-center px-margin-mobile md:px-margin-desktop h-10 w-full max-w-container-max mx-auto gap-4 text-[12px] font-label-md">
+<a class="flex items-center gap-1 text-on-surface-variant hover:text-secondary" href="mailto:info@dreamgurkhasinn.com">
+<span class="material-symbols-outlined text-[14px]">mail</span>dreamgurkhasinn@gmail.com</a>
+<a class="flex items-center gap-1 text-on-surface-variant hover:text-secondary" href="tel:+977014975109">
+<span class="material-symbols-outlined text-[14px]">call</span>
+        +977 9840222905</a>
+<div class="flex items-center gap-3 ml-2 border-l border-outline-variant/30 pl-4">
+<a class="text-on-surface-variant hover:text-secondary" href="#"></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"></a>
+<a class="text-on-surface-variant hover:text-secondary" href="#"></a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Row -->
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Dream Gurkhas Inn Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfh3lojP4-zZgGWdarkKXzHP0jJf5dh6BTT-tNw8L8cNO1pv4lDzp4wy3WgWFNsv6QayQlCP-hCBrCgiFivtYU1P-58FrJj4AaVV-5fXUbTjU3VKbWr2n1NtInESRjeZoL8EBnnV3aCZCHaMwFLcjpbF4hOwrm6GK7Mf9E_HQS96d2YsJjrLtAP4AuA650kUSkKkkZH1jmDwItcnDZSvK7FzgKL1L-RjMdyQ5jrt79zo5Fw39OKVqsil9_D1qF5iWGqU_LnUqf6Bg">
+</div>
+<div class="hidden md:flex gap-gutter items-center ml-auto mr-8">
+<a class="text-on-surface-variant px-2 hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase active:scale-95" href="index.html">Home</a>
+<a class="text-on-surface-variant px-2 hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase active:scale-95" href="menu.html">Menu</a>
+<a class="text-on-surface-variant px-2 hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase active:scale-95" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant px-2 hover:text-secondary transition-colors duration-300 font-label-md text-label-md uppercase active:scale-95" href="blog.html">Blogs</a>
+<a class="text-secondary border-b-2 border-secondary pb-1 font-bold px-2 transition-colors duration-300 font-label-md text-label-md uppercase active:scale-95" href="about.html">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="book-now.html" class="bg-[#2E7D32] text-on-primary font-label-md text-label-md uppercase px-6 py-3 rounded-lg hover:bg-[#1B5E20] transition-colors duration-300 active:scale-95 hidden md:block shadow-md">
+        Book Now
+      </a>
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] min-h-[400px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="A majestic view of a heritage mountain resort nestled in the Himalayas, blending traditional Gurkha architecture with modern luxury." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8Ur3gfodq-q9Pou890QKMlqNyxV8WdT9IpWpdyn9GUAR78CUIuIF0yq7Z3sp4jJIw3FWJLOnF0uANUR_FKVS9lRxTUBwG-EGhBzfo7E9YjwOMo4KXNGZYNhJcI79f9UCxPZ9I49khSPawBgMhUAo73tsmGeEgz5JE5UU9Cl7-yG5BbhR4QQkbr2li4yS2ZCAxoSyYtd3EzNTIBgRXLFaXwcprhkXETIdR5o3dMXqJuS4H1-NKjFn4OMnHKvA-gDmB8ZknnA8bLQPjA">
+<div class="absolute inset-0 bg-background/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-3xl mx-auto">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-primary mb-6 drop-shadow-sm">A Haven for Families</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant bg-surface/80 backdrop-blur-md p-6 rounded-xl shadow-lg border border-outline-variant/20 inline-block">
+                    A family-run retreat where the quiet prestige of the mountains meets the warmth of authentic hospitality. A sanctuary of togetherness. Starting from <span class="text-secondary font-bold">Rs. 300</span>.
+                </p>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative overflow-hidden">
+<!-- Background Accent -->
+<div class="absolute -left-20 top-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Our Origin</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Our Story of Hospitality</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Dream Gurkhas Inn is a labor of love, founded on the values of family and the legendary hospitality of our heritage. What began as a dream to share the serenity of our mountain home has grown into a cherished haven for families seeking connection and comfort. Our architecture reflects this journey, blending traditional motifs with warm, welcoming spaces designed for all generations.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        As a family-run resort, every detail is personal. We invite you to become part of our extended family and experience a stay where safety, warmth, and shared memories define every moment.
+                    </p>
+<!-- Decorative Divider -->
+<div class="flex items-center gap-2 mt-8">
+<div class="h-1 w-1 rounded-full bg-secondary"></div>
+<div class="h-1 w-1 rounded-full bg-secondary"></div>
+<div class="h-1 w-1 rounded-full bg-secondary"></div>
+</div>
+</div>
+<div class="md:col-span-5 md:col-start-8 mt-12 md:mt-0 relative">
+<div class="absolute -inset-4 bg-outline-variant/10 rounded-xl transform rotate-3"></div>
+<img alt="An elegant interior corner of a luxury mountain resort room." class="rounded-xl shadow-lg relative z-10 w-full object-cover aspect-[4/5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrH1kFL85cqgibw4vKH6pLl8tcApseRUoX6pfCLSr-7OtMJHZD5-qeo7WMnEVMGTQBIbyG_JcJ5jZrQt9K2gkRSPiuj1Jq_zaJ8aSqiMgnB9t9UdKGoYrfiOVa7iXThAHWzPXi-uDUSOwpibW544WoXGhjk91rSg_iTaInC_1z71DTh6EoVC3mOKasFYwQ3bODr49EzmZYUQ37y4D8jCl_thVhhxEL2vVk05wBBdVmPiimoivMUrSAAQ_ft31be6-dsPFLc7t8cDw">
+</div>
+</div>
+</section>
+<!-- Our Team Section (Bento Grid Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low relative overflow-hidden">
+<!-- Background Accent -->
+<div class="absolute -right-20 bottom-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Our Family</span>
+<h2 class="font-headline-md text-headline-md text-primary">The Faces Behind Your Stay</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Team Member 1 (Large) -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl bg-surface shadow-sm border border-outline-variant/20 hover:shadow-lg transition-all duration-300">
+<div class="aspect-[16/9] md:aspect-auto md:h-full relative overflow-hidden">
+<img alt="A sophisticated portrait of a senior male hospitality manager." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB8Bu7X0hbq-ERFN_C5gbI8SFAkZCKWJGv22iu-0oF1nDkVeRsTSXccNBiiLelaBeWiqGjSbWFKVOJIDcT_gaKN6RPMEokTtgO_xoRsARQ6MHbiBUT1tvsJxfk7Gpgd8Rfk0ZUKgeicqAed6XO_IHQ24loJLMffTKhMS1ReFratTTtDMSW_neQtb2zvuykKWJD61TkQ6Lff6_U5-A7_DgtpqJPiRIp_3PJ5TTBhT9nDEK2zaSU6j93M_h3TBiRDO3D9roqb2lIiKbzCw">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Prakash Dhakal</h3>
+<p class="font-label-md text-label-md text-secondary uppercase mb-4">Founder &amp; General Manager</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                                Leading our family mission with over two decades of experience, Prakash ensures that every guest feels the warmth of home through personalized service and traditional care.
+                            </p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="relative group overflow-hidden rounded-xl bg-surface shadow-sm border border-outline-variant/20 hover:shadow-lg transition-all duration-300">
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">The Gurkhas Family</h3>
+<p class="font-label-md text-label-md text-secondary uppercase mb-2">Resort Hosts</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Committed to providing a multigenerational haven for all our guests.</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="relative group overflow-hidden rounded-xl bg-surface shadow-sm border border-outline-variant/20 hover:shadow-lg transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="A portrait of a male guest relations manager." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu63LMfWLSSt3c8dkCm3Uq1pZ6G8heQwf2W2TYHs8vYX9BLMgEVQ1rB3cJKzexOoOLL6Jg5_-Lh2zGcV0iaLCJx0tUF44y85kHJ0JGMxWMvzlFQJBhQ2ymDxyTTd8OuUVXQPhNmOiKSkWPwj4odtDqgOu_DT4O38jbmODPVRnQrol1zlhNZGWYo0gyUcJD8jb7RqSmrvvfSR8UuCuF_1dm-dkxt-Sf-u0uVG0-Daz5FfplwtNNHVQVKiMIx3etQ6hgxRk6h2c_-CdTOw">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-90"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Viajay Panta</h3>
+<p class="font-label-md text-label-md text-secondary uppercase mb-2">Guest Relations</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Dedicated to curating family-oriented experiences that bring loved ones closer.</p>
+</div>
+</div>
+<!-- Team Member 4 (Wide) -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl bg-surface shadow-sm border border-outline-variant/20 hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row items-center">
+<div class="w-full md:w-2/5 aspect-square md:aspect-auto md:h-full relative overflow-hidden">
+<img alt="A serene portrait of a female spa director." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcf5ltscRrzwXh8Q-oWvndTiqAEIvc43V8b6jlabEOa4rU7WwP6TpBzGeqoDZZhJUNVY_J0iUGx7nN5nzUpvbDZsqCWlNtFGlZJdfpkY6NoSi50bfw48mF5s-MVoc4-osMPLRm-g7pLeps860YrzRyr9-DBr0h_2kc0Czu9JfUA15xtnfqq9C44IuJuUp3LH65HFpQSMybkkNuJsT3Vn9In9UpSgThGCgfqGCWYVC1PM5xUsTuE0aGWdjtqEqmSVAQczeOHq9LvZVWqw">
+</div>
+<div class="w-full md:w-3/5 p-8 bg-surface">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Dibas Khadka</h3>
+<p class="font-label-md text-label-md text-secondary uppercase mb-4">Brand Ambassador</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Bridging the gap between our family traditions and your modern wellness journey.</p>
+<p class="text-[12px] font-label-md text-on-surface-variant uppercase tracking-wider mb-4">• Tradition Keeper • Wellness Curator • Family Guide</p>
+<div class="flex gap-2">
+<span class="bg-[#2E7D32]/10 text-[#2E7D32] font-label-md text-label-md uppercase px-3 py-1 rounded-full border border-[#2E7D32]/20">Holistic Health</span>
+<span class="bg-[#2E7D32]/10 text-[#2E7D32] font-label-md text-label-md uppercase px-3 py-1 rounded-full border border-[#2E7D32]/20">Heritage Spa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews (Glassmorphism Cards) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+<!-- Decorative Background Element -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#2E7D32]/5 rounded-full blur-3xl -z-10"></div>
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Guestbook</span>
+<h2 class="font-headline-md text-headline-md text-primary">Voices of Our Guests</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review Card 1 -->
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/30 p-8 rounded-xl shadow-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-[#2E7D32] opacity-50"></div>
+<div class="flex items-center gap-1 text-[#2E7D32] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 italic">
+                        "A beautiful family escape. The warmth from the staff made our kids feel right at home. The minimalist design combined with authentic hospitality created an atmosphere of profound peace."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-headline-md text-primary">E</div>
+<div>
+<p class="font-label-md text-label-md uppercase text-primary">Eleanor R.</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">London, UK</p>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/30 p-8 rounded-xl shadow-lg relative overflow-hidden md:-translate-y-4">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-[#2E7D32] opacity-50"></div>
+<div class="flex items-center gap-1 text-[#2E7D32] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 italic">
+                        "The attention to detail is breathtaking. From the warm cream linens to the slate accents, everything feels intentional. As a family, we felt incredibly safe and well-cared for."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-headline-md text-primary">J</div>
+<div>
+<p class="font-label-md text-label-md uppercase text-primary">James T.</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">Sydney, AUS</p>
+</div>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface/60 backdrop-blur-md border border-outline-variant/30 p-8 rounded-xl shadow-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-[#2E7D32] opacity-50"></div>
+<div class="flex items-center gap-1 text-[#2E7D32] mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined">star_half</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 italic">
+                        "Dining with our children was a revelation. The chef perfectly balances high-end presentation with family-friendly flavors. Every meal felt like a special family occasion."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-headline-md text-primary">A</div>
+<div>
+<p class="font-label-md text-label-md uppercase text-primary">Aisha M.</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">Dubai, UAE</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high border-t border-outline-variant/20 w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="flex items-center mb-4">
+<img alt="Dream Gurkhas Inn Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfh3lojP4-zZgGWdarkKXzHP0jJf5dh6BTT-tNw8L8cNO1pv4lDzp4wy3WgWFNsv6QayQlCP-hCBrCgiFivtYU1P-58FrJj4AaVV-5fXUbTjU3VKbWr2n1NtInESRjeZoL8EBnnV3aCZCHaMwFLcjpbF4hOwrm6GK7Mf9E_HQS96d2YsJjrLtAP4AuA650kUSkKkkZH1jmDwItcnDZSvK7FzgKL1L-RjMdyQ5jrt79zo5Fw39OKVqsil9_D1qF5iWGqU_LnUqf6Bg">
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    © 2026. Dream Gurkhas Inn. A Haven for Families.
+                </p>
+</div>
+<div class="md:col-span-1 md:col-start-3">
+<h4 class="font-label-md text-label-md uppercase text-primary font-bold mb-4">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Contact</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md uppercase text-primary font-bold mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline transition-all opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+</body></html>
