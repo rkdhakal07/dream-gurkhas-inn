@@ -1,0 +1,360 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dream Gurkhas Inn - Family Friendly Resort</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#94f990",
+                "primary-container": "#1b1b1b",
+                "outline": "#7e7576",
+                "outline-variant": "#cfc4c5",
+                "surface-variant": "#e2e2e2",
+                "secondary-fixed-dim": "#78dc77",
+                "secondary": "#2E7D32",
+                "surface-container": "#eeeeee",
+                "surface-bright": "#f9f9f9",
+                "tertiary": "#000000",
+                "surface-dim": "#dadada",
+                "on-tertiary-fixed": "#0b2013",
+                "surface-tint": "#2E7D32",
+                "on-tertiary-container": "#728977",
+                "tertiary-container": "#0b2013",
+                "surface": "#f9f9f9",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#e2e2e2",
+                "surface-container-highest": "#e2e2e2",
+                "inverse-primary": "#c6c6c6",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#002204",
+                "on-primary-container": "#848484",
+                "on-primary-fixed": "#1b1b1b",
+                "on-surface-variant": "#4c4546",
+                "on-tertiary-fixed-variant": "#364c3c",
+                "on-secondary": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-surface": "#2f3131",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#c6c6c6",
+                "on-surface": "#1a1c1c",
+                "on-secondary-fixed-variant": "#005313",
+                "primary": "#000000",
+                "brand-green": "#2E7D32",
+                "background": "#f9f9f9",
+                "surface-container-high": "#e8e8e8",
+                "on-primary-fixed-variant": "#474747",
+                "error": "#ba1a1a",
+                "on-secondary-container": "#00731e",
+                "surface-container-low": "#f3f3f3",
+                "inverse-on-surface": "#f1f1f1",
+                "tertiary-fixed-dim": "#b4cdb8",
+                "tertiary-fixed": "#d0e9d4",
+                "secondary-container": "#91f78e",
+                "on-background": "#1a1c1c"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "container-max": "1200px",
+                "margin-desktop": "48px",
+                "unit": "8px",
+                "section-gap": "80px",
+                "margin-mobile": "16px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg-mobile": [
+                        "Noto Serif"
+                ],
+                "headline-xl-mobile": [
+                        "Noto Serif"
+                ],
+                "label-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-xl": [
+                        "Noto Serif"
+                ],
+                "headline-md": [
+                        "Noto Serif"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-lg": [
+                        "Noto Serif"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-surface-container-lowest text-on-background antialiased font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest/90 dark:bg-inverse-surface/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-24 w-full max-w-container-max mx-auto gap-8">
+<a class="flex items-center" href="index.html">
+<img alt="Dream Gurkhas Inn Logo" class="h-20 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfh3lojP4-zZgGWdarkKXzHP0jJf5dh6BTT-tNw8L8cNO1pv4lDzp4wy3WgWFNsv6QayQlCP-hCBrCgiFivtYU1P-58FrJj4AaVV-5fXUbTjU3VKbWr2n1NtInESRjeZoL8EBnnV3aCZCHaMwFLcjpbF4hOwrm6GK7Mf9E_HQS96d2YsJjrLtAP4AuA650kUSkKkkZH1jmDwItcnDZSvK7FzgKL1L-RjMdyQ5jrt79zo5Fw39OKVqsil9_D1qF5iWGqU_LnUqf6Bg">
+</a>
+<div class="hidden md:flex items-center space-x-6 ml-auto">
+<a class="text-brand-green border-b-2 border-brand-green pb-1 font-bold font-label-md text-label-md uppercase active:scale-95 transition-transform" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface px-2 font-label-md text-label-md uppercase hover:text-brand-green transition-colors duration-300 active:scale-95 transition-transform" href="menu.html">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface px-2 font-label-md text-label-md uppercase hover:text-brand-green transition-colors duration-300 active:scale-95 transition-transform" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant dark:text-on-surface px-2 font-label-md text-label-md uppercase hover:text-brand-green transition-colors duration-300 active:scale-95 transition-transform" href="blog.html">Blogs</a>
+<a class="text-on-surface-variant dark:text-on-surface px-2 font-label-md text-label-md uppercase hover:text-brand-green transition-colors duration-300 active:scale-95 transition-transform" href="about.html">About Us</a>
+</div>
+<a href="book-now.html" class="bg-brand-green text-on-primary font-label-md text-label-md uppercase px-6 py-3 rounded-lg hover:opacity-90 transition-all active:scale-95 shadow-[0_4px_20px_rgba(46,125,50,0.2)]">
+                Book Now
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Traditional bamboo steaming basket filled with delicious Nepali momos" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg2oCE18RhzdFjBOLM9F64u_875NOtDMFL4GOxpRSKg4KhV7KXifmwPafEnfRMneaE4F_dxZtQzypqiQGbYIpaarFzSbHhp93ANShMYMsfgfSXuVYUIbj33n55MftOuqOseo_Y2jFEjWan-Y2WyjzvajKSV2Ycl7hjNNlbT-pUG3ZmhgE8RpyjPTPQ-QLNuyOxzyHuneS3buxgpg1fgZRaIW6SD2HI3wyrmt-bGyih18IzoUDM5E2eVf3PUVvuem_m2fpfiIgVdVdlvQ">
+<div class="absolute inset-0 bg-surface-variant/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-container-max mx-auto flex flex-col items-center">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-primary mb-6 max-w-3xl drop-shadow-[0_4px_20px_rgba(255,255,255,0.8)]">
+                A Perfect Getaway for Every Family.
+            </h1>
+<p class="font-body-lg text-body-lg text-primary max-w-2xl mb-8 drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
+                Experience unforgettable moments with your loved ones in the serene beauty of the hills. From spacious family suites to fun-filled activities, we provide a warm and safe haven for guests of all ages.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-brand-green text-on-primary px-8 py-3 rounded-lg font-label-md text-label-md uppercase hover:opacity-90 transition-all shadow-[0_8px_30px_rgba(46,125,50,0.3)]">
+                    Plan Your Family Stay
+                </button>
+<button class="border-2 border-brand-green text-brand-green px-8 py-3 rounded-lg font-label-md text-label-md uppercase hover:bg-brand-green hover:text-on-primary transition-all bg-surface-container-lowest/50 backdrop-blur-sm">
+                    View Family Menu
+                </button>
+</div>
+</div>
+</header>
+<!-- Intro Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-green/30 to-transparent"></div>
+<div class="absolute -right-20 top-20 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Welcome to Dream Gurkhas Inn</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                    Nestled in the tranquil hills of Chapali, Dream Gurkhas Inn is a dedicated family-friendly resort where comfort and joy meet. We've created a space that celebrates togetherness, offering a blend of modern amenities and traditional warmth.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    Whether you're exploring the lush outdoors with your children or enjoying a quiet family dinner featuring authentic flavors starting from <span class="font-bold text-brand-green">Rs. 450</span>, our resort is designed to be your home away from home. Every detail is focused on making your family's stay safe, comfortable, and memorable.
+                </p>
+
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-brand-green/10 rounded-xl rotate-3 opacity-50 z-0"></div>
+<img alt="Family Friendly Resort exterior" class="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] border border-brand-green/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv6h9hhuBhscTlS6iZHsC1iQEJsAfKhnHXWM12UjjYbjLCqlIybN1ijBkta1s6bvdT6Z_Byp-_ZYR13bxB87CDIcloFRL4PUzzXGDCzHpvPUbGUv3_synTM7OTcfv6c5x0d7iA_u8b-_qIOmsaqjmiY4WJRBW2hZ6vLzTxT964_bGgb2YAEUUMlxCmLCLLtdBvVlDYVdJsCBnlTsrziKBpKap8y5koSRrcypfqkg4COvRyZ8_nSNnJ1Df1-YMS7JL_TRjpiSmi2HV6DA">
+</div>
+</div>
+</section>
+<!-- Bento Highlights Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low/30">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">The Family Experience</h2>
+<div class="flex justify-center items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-brand-green"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter auto-rows-[300px]">
+<!-- Highlight 1: Rooms (Large) -->
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group shadow-[0_20px_40px_rgba(0,0,0,0.05)] bg-surface-container-low border border-outline-variant/30">
+<img alt="Family Suites &amp; Cottages" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB8ia9EW1No_dAs7MKdeCTxb5wnq8hoE6YXov5pZb9yb8CC3jWj9osTpAmpmF1aOGiOsjh3jBBoEdXRDMPYYVL7G_sbHEzCIwU9ruJL0Vyx8IqPcz124nGfvjtLJ_ZIIqBRH3uJ2Q0ikMerWT_yKO0g9Ag52cpGdRwfpqOs-GUdVQj7anpRxuCraWnVJaYl7-pZHQZ6R6g8uOXK5bgg4QT1jJOleq9oEYmIbZ00DzEqZQds673nqyFMMcn1fDUbPgufcuK2OUb7NQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="inline-block bg-brand-green/10 border border-brand-green/20 backdrop-blur-md px-3 py-1 rounded font-label-md text-label-md uppercase text-brand-green mb-3">Family Comfort</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Family Suites &amp; Cottages</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md hidden sm:block">Our spacious accommodations start from <span class="font-bold">Rs. 4,500</span> per night, specifically designed for families.</p>
+</div>
+</div>
+<!-- Highlight 2: Dining -->
+<div class="relative rounded-xl overflow-hidden group shadow-[0_20px_40px_rgba(0,0,0,0.05)] bg-surface-container-low border border-outline-variant/30">
+<img alt="Family Dining" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKlLGMvpshESlGxls4nfg8p69-ICdLFz4FjqKdd28_eBHO2ZEw3SzVIQAyUTP0yFHKYQx0DDHkdhzminbCCIi29mtccdfEE4DPosGv2AK1rZZBaAy_AYnwYUdXZpWOwpYwOU8Lc8MEQbQOK7cz6grOQ_cfRVyCrm_VmaFGTwbPwTK5YvlS12biPY2tb4Mc7qZeAfwn1E2jKKj5zUK_K2kdcXGY5HNUqYvHFcIjlf0ofwfYm-CvE1gOH1SPU0ij4BwWkDxwfG1I2gM">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Family Feasts</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Authentic sets from Rs. 850.</p>
+</div>
+</div>
+<!-- Highlight 3: Nature -->
+<div class="relative rounded-xl overflow-hidden group shadow-[0_20px_40px_rgba(0,0,0,0.05)] bg-surface-container-low border border-outline-variant/30">
+<img alt="Outdoor Family Activities" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACtI--ketnJY2gr_ZNwIBGYEaVpB_Vg19kvaf-puFPUgtIux9-1m0GhN95_yKnWw7GFwxBcYf3WSdUfJCg7m4_ZcGTq0FpjB0KAFR-308xuCl6XzWDPGSVblylIy0I_zYw5FTNzqYIgC3kUBVePTG__NNSCvqj6zu1A2Ra17zA1ant6MbUWUQV6BdwY0HiEsSSGIdGaEaU2wA8fO_vaaBhBYwDmCVNjCqq0r3-Q1PC5FIFTPXWTP9WEyR1GGlCFTiyQozAkMqFKfk">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Outdoor Fun</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Explore safe trails &amp; spaces.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<div class="inline-block bg-brand-green/10 border border-brand-green/20 px-3 py-1 rounded font-label-md text-label-md uppercase text-brand-green mb-4">Guestbook</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">Voices of Our Guests</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="p-8 rounded-xl bg-surface-container-low/30 border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-brand-green">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"The perfect escape for our family. The kids loved the outdoor spaces, and the staff made us feel right at home."</p>
+<div class="mt-auto">
+<p class="font-bold text-on-surface">Eleanor R.</p>
+<p class="text-label-md text-on-surface-variant opacity-70">London, UK</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-8 rounded-xl bg-surface-container-low/30 border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-brand-green">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"Authentic flavors and breathtaking views. The family suites are spacious and beautifully maintained."</p>
+<div class="mt-auto">
+<p class="font-bold text-on-surface">James T.</p>
+<p class="text-label-md text-on-surface-variant opacity-70">Sydney, Australia</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-8 rounded-xl bg-surface-container-low/30 border border-outline-variant/30 flex flex-col gap-4">
+<div class="flex text-brand-green">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"A truly serene experience. We've already booked our return stay for next summer!"</p>
+<div class="mt-auto">
+<p class="font-bold text-on-surface">Aisha M.</p>
+<p class="text-label-md text-on-surface-variant opacity-70">Dubai, UAE</p>
+</div>
+</div>
+</div>
+</div>
+</section><footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="mb-6">
+<img alt="Dream Gurkhas Inn Logo" class="h-20 w-auto object-contain brightness-0 dark:brightness-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8W_f6jE0ncsLtc47HReuvPjHHPRpSycvYF_BIsuxiZOKTA-LiUBdQlX6aqhaLOxmf-gPNeuujOZZKIiW6SHjO5dzNNijlhj86qeFZUDshD7_OwaSRMb9uTaXz1UV0KlVMY3el7cCUNxpz-c3ylRcjYq0xG4ec-a0JZaZezq9gKVuIcD8bIr7AvfcDZcY5jM4CwfAIyZcGxOlVrgH78thEJXZORUkCTStaJ5MedjMJ8mXmlxmy6YqGsWQt40MBuxYloob_Y16r8nYo3Q">
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant mb-6">
+                    A welcoming family-friendly resort designed for comfort, adventure, and cherished memories in the heart of nature.
+                </p>
+</div>
+<div class="md:col-span-3 flex flex-col md:flex-row justify-end gap-12 font-label-md text-label-md uppercase">
+<div class="flex flex-col space-y-4">
+<span class="text-brand-green font-bold mb-2">Connect</span>
+<a class="text-on-surface-variant hover:text-brand-green underline transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-brand-green underline transition-all opacity-80 hover:opacity-100" href="#">Family Activities</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-brand-green font-bold mb-2">Legal</span>
+<a class="text-on-surface-variant hover:text-brand-green underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-brand-green underline transition-all opacity-80 hover:opacity-100" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/20 py-6 px-margin-mobile md:px-margin-desktop text-center font-body-md text-body-md text-on-surface-variant">
+            © 2026 Dream Gurkhas Inn.&nbsp;</div>
+</footer>
+
+
+
+
+</body></html>
