@@ -191,16 +191,89 @@
             -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
             -webkit-text-fill-color: #1a1c1c !important;
         }
-    </style>
+    
+  /* Desktop Book Now layout: center the form and assistance panel together. */
+  @media (min-width: 1025px) {
+    main > div.relative.z-10.grid {
+      width: calc(100% - 64px) !important;
+      max-width: 1180px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+    }
+    main > div.relative.z-10.grid > div:first-child {
+      grid-column: 2 / span 7 !important;
+    }
+    main > div.relative.z-10.grid > div:nth-child(2) {
+      grid-column: 9 / span 3 !important;
+    }
+  }
+</style>
   <style>
   html, body { width: 100%; min-height: 100%; overflow-x: hidden; }
   body { min-height: 100vh; }
   input[type="date"], input[type="number"], select { min-height: 44px; }
   #bookingFeedback { line-height: 1.5; }
   @media (max-width: 767px) {
-    main { padding-top: 2rem !important; padding-bottom: 2rem !important; }
-    #bookingForm button { width: 100%; }
-    header nav { flex-wrap: wrap; }
+    main {
+      display: block !important;
+      padding: 1.5rem 0 !important;
+    }
+    main > div.relative.z-10.grid {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      gap: 1.5rem !important;
+    }
+    main > div.relative.z-10.grid > div {
+      width: 100% !important;
+      min-width: 0 !important;
+      grid-column: 1 / -1 !important;
+    }
+    #bookingForm,
+    #bookingForm > div,
+    #bookingForm label,
+    #bookingForm input,
+    #bookingForm select,
+    #bookingForm textarea {
+      max-width: 100%;
+      min-width: 0;
+    }
+    #bookingForm input,
+    #bookingForm select,
+    #bookingForm textarea {
+      width: 100%;
+      font-size: 16px;
+    }
+    #bookingForm button {
+      width: 100%;
+      min-width: 0;
+      white-space: normal;
+    }
+    main h1 {
+      font-size: clamp(1.8rem, 7vw, 2.35rem);
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+    main h2 {
+      flex-wrap: wrap;
+      line-height: 1.35;
+    }
+    main .bg-surface-container-lowest.rounded-xl {
+      padding: 1rem !important;
+    }
+    main .md\\:col-span-4 {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    main > div.relative.z-10.grid {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 </style>
   <link href="assets/site.css" rel="stylesheet"/>
@@ -394,51 +467,6 @@
    </div>
    <!-- Right Column: Special Offers & Info -->
    <div class="md:col-span-4 space-y-6">
-    <!-- Promo Card 1 -->
-    <div class="bg-surface-container-lowest/80 backdrop-blur-md rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-outline-variant/30 overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
-     <div class="h-40 relative overflow-hidden">
-      <img alt="A close-up view of a traditional Nepali massage therapy setup in a spa. Warm, low-key lighting illuminates smooth basalt hot stones resting on a pristine white towel, alongside a small ceramic bowl of aromatic oil infused with golden marigold petals. The scene evokes deep relaxation, wellness, and local heritage in a luxurious setting." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up view of a traditional Nepali massage therapy setup in a spa. Warm, low-key lighting illuminates smooth basalt hot stones resting on a pristine white towel, alongside a small ceramic bowl of aromatic oil infused with golden marigold petals. The scene evokes deep relaxation, wellness, and local heritage in a luxurious setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ajgmGzREnf-3d3oZSf5fSSxKxhgpdyQ4pF2FM0p703upre6XMAo0sI0NZAskRPrxAuGHFzCNwpRfCZ7X7CUUVD1z1Ttp0dDkyrwX4MhRrSolSTLC3ot17P4Tp5m64HP6QMM6xhEPtYrfYl4jld2XKT_FcypETpfDsJVr9mL2r1g9f-Jzcnm98GDp_ZlvZZJWRYf81FSmbUO-MIzHKuor8Ujyd8cBxmZfg6sQnnype9WCMa4Xv_cQCvgWWpYg4TFkh_8ml5DF6jc"/>
-      <div class="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm px-3 py-1 rounded-full border border-secondary-fixed-dim/30">
-       <span class="font-label-md text-label-md uppercase text-on-primary font-bold">
-        Special Package
-       </span>
-      </div>
-     </div>
-     <div class="p-6">
-      <h3 class="font-headline-md text-headline-md text-primary mb-2">
-       Heritage Wellness Retreat
-      </h3>
-      <p class="font-body-md text-body-md text-on-surface-variant mb-4">
-       Book 3+ nights and receive a complimentary 60-minute traditional hot stone therapy session for two.
-      </p>
-      <span class="text-secondary font-label-md text-label-md uppercase flex items-center gap-1 group-hover:text-primary transition-colors">
-       View Details
-       <span class="material-symbols-outlined text-[16px]">
-        chevron_right
-       </span>
-      </span>
-     </div>
-    </div>
-    <!-- Promo Card 2 -->
-    <div class="bg-surface-container-lowest/80 backdrop-blur-md rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-outline-variant/30 overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
-     <div class="h-40 relative overflow-hidden">
-      <img alt="An elegant, minimalist table setting at a high-end restaurant overlooking a mountain valley. The table features a crisp white linen cloth, gleaming silver cutlery, and a centerpiece of fresh, vibrant red crimson flowers. In the background, softly out of focus, are majestic snow-capped peaks under a clear sky. The lighting is natural and bright." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant, minimalist table setting at a high-end restaurant overlooking a mountain valley. The table features a crisp white linen cloth, gleaming silver cutlery, and a centerpiece of fresh, vibrant red crimson flowers. In the background, softly out of focus, are majestic snow-capped peaks under a clear sky. The lighting is natural and bright." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBclSAJs0W8DWgJcI2Ka8Lf0E4ZIlpKNoI72gmVM2tZ2Ol1wBlDbdK5ukm5abQTMVwkmOoVWUEKVNhdoSFta7p7v08h1NsCwM7yMKWL2yDfYZ1qoFkKRh1EB1MROPsIU-ui7xPM6sdgIQo3FwLZyXd7xF7tuX-qFcpuv5gwX1qy1BymPEFMbswjouigq7PQCbqKLGTYhaxEk-ma4yRa_jcyCgwkdqDodOM2U2as_Tjy3c4IQy4P39DGcdRnmC-ox0DpqlQsgHi1XE4"/>
-     </div>
-     <div class="p-6">
-      <h3 class="font-headline-md text-headline-md text-primary mb-2">
-       Epicurean Evening
-      </h3>
-      <p class="font-body-md text-body-md text-on-surface-variant mb-4">
-       Add our exclusive 5-course tasting menu featuring locally sourced Himalayan ingredients to your stay.
-      </p>
-      <label class="flex items-center gap-3 cursor-pointer">
-       <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary focus:ring-offset-surface bg-transparent cursor-pointer" type="checkbox"/>
-       <span class="font-body-md text-body-md text-on-surface">
-        Add to reservation ()
-       </span>
-      </label>
-     </div>
-    </div>
     <!-- Need Help Card -->
     <div class="bg-surface-container-low rounded-xl p-6 border border-outline-variant/20 flex flex-col items-center text-center">
      <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
